@@ -20,15 +20,11 @@ public class LoginPage {
         TestClass.getDriver().findElement(By.xpath("//div[@class='IiD88i _351hSN']//child::input[@type='text']")).sendKeys(userId);
         TestClass.getDriver().findElement(By.xpath("//div[@class='IiD88i _351hSN']//child::input[@type='password']")).sendKeys(password);
         TestClass.getDriver().findElement(By.xpath("//div[@class='IiD88i _351hSN']//child::input[@type='password']")).sendKeys(Keys.ENTER);
-//        String res = webDriver1.findElement(By.xpath("//*[contains(text(),'Your username or password is incorrect')]"));
 
-//        Assert.assertFalse(TestClass.getDriver().findElements(By.xpath("//div[@class='mw-parser-output']//p[2]")).isEmpty());
-//        System.out.println("logged in hard assertion");
 
 
         SoftAssert softAssertion= new SoftAssert();
         softAssertion.assertTrue(TestClass.getDriver().findElements(By.xpath("//div[@class='mw-parser-output']//p[2]")).isEmpty());
-//        System.out.println("softAssert Method Was Executed");
 
     }
 }
