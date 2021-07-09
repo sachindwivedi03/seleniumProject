@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="System Testing" parallel="none" thread-count="1">
+
+    <listeners>
+        <listener class-name="listeners.ListenersTest" />
+    </listeners>
+
+    <test name="FlipkartTest" verbose="0">
+        <classes>
+            <class name="webHandlers.TestClass"/>
+            <class name="webHandlers.LoginPage" />
+            <class name="webHandlers.SearchPage" />
+            <class name="webHandlers.ResultsPage" />
+            <class name="webHandlers.ProductPage" />
+        </classes>
+    </test>
+
+</suite>

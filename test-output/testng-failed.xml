@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [System Testing]">
+  <listeners>
+    <listener class-name="listeners.ListenersTest"/>
+  </listeners>
+  <test thread-count="1" name="FlipkartTest(failed)">
+    <classes>
+      <class name="webHandlers.ResultsPage">
+        <methods>
+          <include name="ResultsPageFunction"/>
+        </methods>
+      </class> <!-- webHandlers.ResultsPage -->
+      <class name="webHandlers.ProductPage">
+        <methods>
+          <include name="ProductPageFunction"/>
+        </methods>
+      </class> <!-- webHandlers.ProductPage -->
+    </classes>
+  </test> <!-- FlipkartTest(failed) -->
+</suite> <!-- Failed suite [System Testing] -->
